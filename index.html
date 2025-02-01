@@ -21,7 +21,23 @@
         .font-sora {
   font-family: "Sora", serif;
 }
-        
+        @keyframes identifier {
+            from {
+                opacity: 0;
+                scale: 0.5;
+            } 
+            to {
+                opacity: 1;
+                scale: 1;
+            }           
+        }
+
+        .anime {
+            animation: identifier linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+
     </style>
 </head>
 <body class="font-sora">
@@ -60,7 +76,7 @@
          
 
          <!-- Banner section  -->
-          <section class="mb-24 mt-9">
+          <section class=" mb-24 md:mt-24 mt-16">
                 <div class="mb-10">
                     <h1 class="text-center font-semibold text-3xl md:text-5xl">Freshness <span class="text-[#179800]">You Can</span> <br>
                         <span class="text-[#179800]">Count</span> On, Prices You’ll Love!</h1>
@@ -70,7 +86,7 @@
 
                 <!-- image -->
                  <div class="flex justify-center">
-                    <img class="animate-bounce" src="c2-assets/hero-vegetables.png" alt="">
+                    <img class="anime" src="c2-assets/hero-vegetables.png" alt="">
                  </div>
 
           </section>
@@ -186,7 +202,7 @@
                 <!-- Big Card -->
                 <div class=" flex md:mx-auto max-w-[390px] h-[400px] pl-4 pt-12 bg-gradient-to-tl from-white to-[#01cb01] rounded-xl">
                     <div class="">
-                        <h1 class="text-2xl font-semibold text-white">30% off</h1>
+                        <h1 class="text-2xl font-semibold whitespace-nowrap text-white">30% off</h1>
                         <br>
                         <div class="absolute">
                             <p class="text-xs">Buy our fresh vegetables for quality, nutrition, <br> and unbeatable taste every day!</p>
@@ -205,11 +221,11 @@
                  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6 lg:w-10/12 mx-auto">
 
                     <!-- Card 1 -->
-                    <a href=""><div class="flex hover:bg-gradient-to-tl from-white to-[#01cb01] bg-white p-2 lg:p-4 gap-2 lg:gap-7 rounded-lg">
+                    <a href=""><div class="flex hover:bg-gradient-to-tl from-white to-[#01cb01] bg-white p-2 lg:p-4 gap-2 lg:gap-4 rounded-lg">
 
                         <!-- Image  -->
                         <div>
-                            <img src="c2-assets/Group 16.png" alt="">
+                            <img class="md:w-full" src="c2-assets/Group 16.png" alt="">
                         </div>
 
                         <!-- Text  -->
@@ -227,7 +243,7 @@
 
                         <!-- Image  -->
                         <div>
-                            <img src="c2-assets/Group 16-2.png" alt="">
+                            <img class="md:w-full" src="c2-assets/Group 16-2.png" alt="">
                         </div>
 
                         <!-- Text  -->
@@ -245,7 +261,7 @@
 
                         <!-- Image  -->
                         <div>
-                            <img src="c2-assets/Group 16-3.png" alt="">
+                            <img class="md:w-full" src="c2-assets/Group 16-3.png" alt="">
                         </div>
 
                         <!-- Text  -->
@@ -263,7 +279,7 @@
 
                         <!-- Image  -->
                         <div>
-                            <img src="c2-assets/Group 16-2.png" alt="">
+                            <img class="md:w-full" src="c2-assets/Group 16-2.png" alt="">
                         </div>
 
                         <!-- Text  -->
@@ -281,7 +297,7 @@
 
                         <!-- Image  -->
                         <div>
-                            <img src="c2-assets/Group 16.png" alt="">
+                            <img class="md:w-full" src="c2-assets/Group 16.png" alt="">
                         </div>
 
                         <!-- Text  -->
@@ -299,7 +315,7 @@
 
                         <!-- Image  -->
                         <div>
-                            <img src="c2-assets/Group 16-2.png" alt="">
+                            <img class="md:w-full" src="c2-assets/Group 16-2.png" alt="">
                         </div>
 
                         <!-- Text  -->
@@ -317,7 +333,7 @@
 
                         <!-- Image  -->
                         <div>
-                            <img src="c2-assets/Group 16.png" alt="">
+                            <img class="md:w-full" src="c2-assets/Group 16.png" alt="">
                         </div>
 
                         <!-- Text  -->
@@ -335,7 +351,7 @@
 
                         <!-- Image  -->
                         <div>
-                            <img src="c2-assets/Group 16-3.png" alt="">
+                            <img class="md:w-full" src="c2-assets/Group 16-3.png" alt="">
                         </div>
 
                         <!-- Text  -->
@@ -354,7 +370,7 @@
 
                             <!-- Image  -->
                             <div>
-                                <img src="c2-assets/Group 16-3.png" alt="">
+                                <img class="md:w-full" src="c2-assets/Group 16-3.png" alt="">
                             </div>
     
                             <!-- Text  -->
@@ -377,10 +393,10 @@
            <section class="mb-24 lg:w-10/12 w-11/12 mx-auto py-14 lg:py-24">
             <h1 class="font-semibold text-2xl lg:text-4xl text-[#179800] mb-8 lg:mb-12">Arrival & Offers</h1>
     
-            <div class="md:flex gap-5 space-y-5 lg:space-y-0">
+            <div class="lg:flex gap-5 space-y-5 lg:space-y-0">
     
                 <!-- Card 1 -->
-                <div class="flex relative justify-between p-2 lg:p-5 lg:w-7/12 mx-auto bg-[#115414] rounded-lg lg:h-[330px]">
+                <div class="flex relative justify-between p-2 lg:p-5 lg:w-7/12 mx-auto bg-[#115414] rounded-xl lg:h-[330px]">
                     <div>
                         <img class="mb-4 lg:mb-8" src="c2-assets/dawat-logo.png" alt="">
     
@@ -398,16 +414,16 @@
     
                 <!-- Card 2 -->
                 <div class=" lg:w-5/12 mx-auto ">
-                    <div class="flex relative justify-between p-5 lg:p-5 lg:pl-2 mx-auto bg-[#102861] rounded-lg">
+                    <div class="flex relative justify-between p-5 lg:p-5 lg:pl-2 mx-auto bg-[#102861] rounded-xl">
                         <div>
                             <img class="w-[64px] h-[70px] lg:h-[100px] mb-2 lg:mb-4" src="c2-assets/india-gate-logo.png" alt="">
                             <div class="absolute text-white">
-                                <button class="text-xs lg:text-lg   bg-[#2A4D97] text-white lg:py-4 py-2 lg:px-3 px-5 rounded-lg lg:mb-6 mb-4">World’s No.1 Rice</button>
+                                <button class="text-xs lg:text-lg   bg-[#2A4D97] text-white lg:py-4 py-2 lg:px-3 px-6 rounded-lg lg:mb-6 mb-4">World’s No.1 Rice</button>
                             <p class="lg:text-2xl text-xl">UP to <span class="font-bold">40% OFF</span></p>
                             </div>
                         </div>
                         <div>
-                            <img class="w-[120px] h-[160px] lg:w-full lg:h-full" src="c2-assets/india-gate-mock-up.png" alt="">
+                            <img class="w-[120px] h-[160px] md:w-full md:h-full" src="c2-assets/india-gate-mock-up.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -451,7 +467,7 @@
             </div>
          </section>
 
-        <section class=" h-[750px] lg:h-[658px] bg-[#179800] pt-[300px] lg:pt-[400px] lg:pb-[140px] text-[#EFEBE3] ">
+        <section class=" h-[750px] lg:h-[658px] bg-[#179800] pt-[350px] lg:pt-[400px] lg:pb-[140px] text-[#EFEBE3] ">
             <div class="md:flex justify-between w-11/12 lg:w-10/12 mx-auto ">
                 <div class="mb-8">
                     <img src="c2-assets/logo-footer.png" alt="">
