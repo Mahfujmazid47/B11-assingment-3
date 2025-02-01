@@ -21,6 +21,8 @@
         .font-sora {
   font-family: "Sora", serif;
 }
+
+        /* Image Animation  */
         @keyframes identifier {
             from {
                 opacity: 0;
@@ -37,10 +39,30 @@
             animation-timeline: view();
             animation-range: entry 0% cover 40%;
         }
+        
+        /* Title Animation */
+        .anime-2 {
+            animation: fadeInUp 3s ease-out infinite;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
 
     </style>
 </head>
 <body class="font-sora">
+
+    <!-- Marquee Section  -->
+     <marquee class="text-2xl font-me" behavior="" direction="left">Sale is <span class="text-[#179800]">going on !!!</span> <span class="text-red-500">20% Off</span></marquee>
     
     <!-- Header Section  -->
      <header class="container mx-auto bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
@@ -78,10 +100,10 @@
          <!-- Banner section  -->
           <section class=" mb-24 md:mt-24 mt-16">
                 <div class="mb-10">
-                    <h1 class="text-center font-semibold text-3xl md:text-5xl">Freshness <span class="text-[#179800]">You Can</span> <br>
+                    <h1 class="anime-2 text-center font-semibold text-3xl md:text-5xl">Freshness <span class="text-[#179800]">You Can</span> <br>
                         <span class="text-[#179800]">Count</span> On, Prices You’ll Love!</h1>
                     <br>
-                    <p class="text-center text-sm font-light md:font-normal text-[#111111]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
+                    <p class="anime-2 text-center text-sm font-light md:font-normal text-[#111111]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
                 </div>
 
                 <!-- image -->
@@ -97,7 +119,7 @@
 
         <!-- My Section  -->
          <section class="mb-24">
-            <h1 class="text-center font-semibold text-3xl md:text-5xl mb-10">Top <span class="text-[#179800]">Products</span></h1>
+            <h1 class="text-center font-semibold text-3xl md:text-5xl mb-16 lg:mb-24">Top <span class="text-[#179800]">Products</span></h1>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 lg:w-10/12 mx-auto gap-14 md:gap-8">
                 
